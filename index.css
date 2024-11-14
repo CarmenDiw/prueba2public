@@ -1,0 +1,85 @@
+
+        body {
+            /* font-family: "Times", "sans-serif"; */
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        /*Contenedor al 80% del área disponible y centrado con margin*/
+        #contenedor {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Estilos para la cabecera con logo Extremadura*/
+        #cabecera {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        /* quitamos margin al encabezado h2*/
+        #logo h2 {
+            margin: 0;
+        }
+        /* Estilos para el menú, colores y margen interno padding*/
+        #menu {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+        }
+        /* Quitamos viñeta a la lista de menú y centramos*/
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        /* Comportamiento de los li en línea y separación entre ellos*/
+        #menu li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        /*Quitamos subrayado a los elem del menú...*/
+        #menu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        #menu a:active {
+            color: #ff0000; /* Cambia el color del enlace cuando está siendo clicado */
+        }
+        /* Área principal con padding para separación*/
+        #contenido {
+            padding: 20px;
+        }
+
+        .articulo {
+            margin-bottom: 20px;
+        }
+
+        .articulo h2 {
+            color: #007bff;
+        }
+
+        .articulo p {
+            margin: 0;
+        }
+        /* Estilos para todos los estados del enlace LoVe Fears HAte*/
+        .articulo a {
+          color: red;
+        }
+        .articulo a:visited {
+          color: rgb(255, 0, 30);
+        }
+        .articulo a:focus {
+          color: black;
+        }
+        .articulo a:hover {
+          color: green;
+        }
+        .articulo a:active {
+          color: blue;
+        }

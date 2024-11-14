@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<style>
+/* Disposición del form, centrado con padding interno y ancho máximo*/   
+form{
+  padding: 50px;
+  max-width: 400px;
+  background-color: #E7E7E7;
+  margin: 0 auto; }
+
+ /*Estilos para los input y textarea*/
+form input, form textarea {
+  margin-bottom: 15px;
+  font-family: "Roboto", "sans-serif";
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; /*Con border-box se tiene en cuenta las dimensiones anteriores*/
+  border: none;
+  color: #525c66;
+  font-size: .75em;
+  resize: none; /* Evita desbordar el textarea*/ }
+
+form button {
+	/* display: block; */
+	background-color: #0095eb;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: 1em;
+	color: 	white;
+   font-family: "Arial", "sans-serif"; }
+
+/*Estilo para el botón cuando pasamos por él*/
+form button:hover{
+	background-color: #046193; }
+
+textarea { resize: none;}
+</style>
+
+<body>
+<!--Contenedor-->
+<div id="contenedor">
+    <div id="cabecera">
+       <div id="logo">
+          <h2>Extremadura</h2>
+       </div>
+    </div>  <!--/Cabecera-->
+    <div id="menu">
+       <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./SobreNosotros.html">Sobre Nosotros</a></li>
+          <li><a href="./Contacto.html">Contacto</a></li>
+       </ul>
+     </div> <!--/Menú Principal-->
+     <form action="formulario-contacto.php" method="post">
+
+        <input name="nombre" type="text" placeholder="Nombre" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus/>
+        <input name="email" type="email" placeholder="Correo electrónico" required />
+        <textarea name="consulta" placeholder="¿Cuál es el motivo de tu consulta?" rows="6" required></textarea>
+        <button id="enviar" name="enviar" type="submit">ENVIAR</button>
+    
+    </form> 
+ </div> <!--/Contenedor-->
+
+
+</body>
+</html>
